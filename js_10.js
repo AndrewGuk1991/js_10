@@ -154,6 +154,69 @@
 // car4.showColor()
 
 
+// const car1 = {
+//     brand: 'opel',
+//     speed: 150,
+//     startEngine(a, b) {
+//         console.log(a, b)
+//         console.log(`start ${this.brand}`);
+//     }
+// }
+
+// car1.startEngine()
+
+// const car2 = {
+//     brand: 'lexus',
+//     speed: 250,
+// }
+
+// car1.startEngine.call(car2, 2, 2)
+// car1.startEngine.apply(car2, [2, 2])
+
+// const res = car1.startEngine()
+// console.log(res)
+
+// car1.startEngine.apply(car2)
+
+// const a = () => {
+//     console.log(this)
+// }
+//
+// a()
+
+// 'use strict'
+
+// const user = {
+//     firstName: "John",
+//     showName() {
+//         const a = () => {
+//             console.log(this.firstName)
+//         }
+//         a()
+//     }
+// }
+//
+// user.showName()
+
+// call, apply, bind
+
+const car1 = {
+    brand: 'opel',
+    speed: 200,
+    startEngine(a,b) {
+        console.log(a, b)
+        console.log(`start ${this.brand}`)
+    }
+}
+
+const car2 = {
+    brand: 'ford',
+    speed: 250,
+}
+
+car1.startEngine.call(car2, 1, 2)
+car1.startEngine.apply(car2, [2, 3])
+
 
 
 
