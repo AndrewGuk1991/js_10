@@ -200,22 +200,39 @@
 
 // call, apply, bind
 
-const car1 = {
-    brand: 'opel',
-    speed: 200,
-    startEngine(a,b) {
-        console.log(a, b)
-        console.log(`start ${this.brand}`)
-    }
-}
+// const car1 = {
+//     brand: 'opel',
+//     speed: 200,
+//     startEngine(a,b) {
+//         console.log(a, b)
+//         console.log(`start ${this.brand}`)
+//     }
+// }
+//
+// const car2 = {
+//     brand: 'ford',
+//     speed: 250,
+// }
+//
+// const car3 = {
+//     brand: 'lexus',
+//     speed: 300,
+// }
 
-const car2 = {
-    brand: 'ford',
-    speed: 250,
-}
+// car1.startEngine.call(car2, 1, 2)
+// car1.startEngine.apply(car2, [2, 3])
 
-car1.startEngine.call(car2, 1, 2)
-car1.startEngine.apply(car2, [2, 3])
+
+
+// const fff = car1.startEngine.bind(car2)
+// const fff2 = car1.startEngine.bind(car3)
+//
+// fff.call(car3)
+// fff2.apply(car2)
+
+
+
+
 
 
 
