@@ -231,8 +231,34 @@
 // fff2.apply(car2)
 
 
+// const scooter = {
+//     brand: 'honda',
+//     speed: 60
+// }
+//
+// const car2 = {
+//     brand: 'bmw',
+//     speed: 200,
+//     showMaxSpeed() {
+//         (
+//             () => {
+//                 console.log(this.speed)
+//             }
+//         ).call(scooter)
+//     }
+// }
+//
+// car2.showMaxSpeed()
 
-
+// function CarCreator (brand) {
+//     // {}
+//     // this = {}
+//     this.brand = brand
+//     // return this
+// }
+//
+// const car = new CarCreator('bmw')
+// console.log(car)
 
 
 
